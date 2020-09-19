@@ -54,7 +54,7 @@ public class Graph12CycleUndirected {
 		Udg g = new Udg(nodes);
 		
 		g.addEdge(0,1);
-		g.addEdge(1,2);
+		//g.addEdge(1,2);
 		g.addEdge(2,0);
 		
 		System.out.println(g.isCycle());

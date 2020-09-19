@@ -60,7 +60,7 @@ public class BFSGraph {
          g.addEdge(3,3);
          
          System.out.println("Following is the bfs traversal starting from vertex 2");
-         g.BFS(2);
+         g.BFS(0);
 	}
 
 }
