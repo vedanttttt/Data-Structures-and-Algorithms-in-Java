@@ -2,6 +2,8 @@
 
 package Recursion;
 
+import java.util.Arrays;
+
 public class FloodFill {
 
 	public static void main(String[] args) {
@@ -14,6 +16,7 @@ public class FloodFill {
     		 {1,1,2,2,1,0,0}
      };
      floodfill(a,2,3,3,2);
+     System.out.println(Arrays.deepToString(a));
 	}
 	
 	static void floodfill(int[][] a,int r,int c,int toFill,int prevFill) {
