@@ -4,7 +4,6 @@ public class GameTheory {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		int[] ar = {1,5,7,3,2,4};
 		System.out.println(coinMax(ar,0,ar.length-1));
 	}
