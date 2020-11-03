@@ -32,8 +32,8 @@ public class CoinChange {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] coins= {1,2,3};
-		int sum=5;
+		int[] coins= {2,4,5};
+		int sum=1;
 		System.out.println(CoinChange.totalWays(coins,sum));
 	}
 

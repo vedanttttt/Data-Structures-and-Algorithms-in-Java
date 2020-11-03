@@ -1,11 +1,14 @@
 package DynamicProgramming;
 
+import java.util.Arrays;
+
 public class LongestIncreasingSubsequenceLength {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		int[] a= {7,1,4,8,11,2,14,3};
+		int[] b= {1,3,5,4,7};
 		
 		System.out.println(LongestIncreasingSubsequenceLength.lisLength(a));
 	}
@@ -28,6 +31,7 @@ public class LongestIncreasingSubsequenceLength {
 			maxlisLength=Math.max(maxlisLength, lis[i]);
 		}
 		
+		System.out.println(Arrays.toString(lis));
 		return maxlisLength;
 	}
 }
