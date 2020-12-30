@@ -24,7 +24,7 @@ public class MinJumpsToReachEnd {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] arr= {1,2,1,3,2,1,2,1};
+		int[] arr= {3,3,0,2,1,2,4,2,0,0};
 		System.out.println(MinJumpsToReachEnd.minJumps(arr));
 	}
 
