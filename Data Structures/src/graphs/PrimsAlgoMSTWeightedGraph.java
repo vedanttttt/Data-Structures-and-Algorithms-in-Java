@@ -38,7 +38,7 @@ class Grap{
 			
 			Edge minValueEdge = minHeap.poll();
 			
-			if(visited[minValueEdge.targetNode])
+			if(visited[minValueEdge.targetNode])   //ek node ke do weights he minheap toh , minimum wala liya or doosre ko nahi lenge
 				continue;
 			
 			visited[minValueEdge.targetNode]=true;

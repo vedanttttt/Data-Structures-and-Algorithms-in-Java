@@ -1,49 +1,35 @@
 package graphs;
-//import java.util.*;
-//
-//public class KruskalAlgoforMST {
-//
-//	public class EdgeComparator implements Comparator<Edge<Integer>>{
-//		@Override
-//		public int compare(Edge<Integer> edge1,Edge<Integer> edge2) {
-//			if(edge1.get)
-//		}
-//	}
-//	
-//	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
-//		
-//	}
-//
-//}
+import java.util.*;
 
+class Edge{
+	int u;
+	int v;
+	int weight;
+	
+	public Edge(int u,int v,int w) {
+		this.u=u;
+		this.v=v;
+		this.weight=w;
+	}
+	
+	int getU() {
+		return u;
+	}
+	int getV() {
+		return v;
+	}
+	int getWeight() {
+		return weight;
+	}
+}
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
-/**
- * Date 09/25/2014
- *
- * @author Tushar Roy
- *         <p>
- *         Find minimum spanning tree usinig Kruskals algorithm
- *         <p>
- *         Time complexity - O(ElogE)
- *         Space complexity - O(E + V)
- *         <p>
- *         References
- *         https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
- */
-
-public class KruskalMST {
+public class KruskalAlgoforMST {
     /**
      * Comparator to sort edges by weight in non decreasing order
      */
-    public class EdgeComparator implements Comparator<Edge<Integer>> {
+    public class EdgeComparator implements Comparator<Edge> {
         @Override
-        public int compare(Edge<Integer> edge1, Edge<Integer> edge2) {
+        public int compare(Edge edge1, Edge edge2) {
             if (edge1.getWeight() <= edge2.getWeight()) {
                 return -1;
             } else {
@@ -98,7 +84,7 @@ public class KruskalMST {
         graph.addEdge(4, 7, 2);
         graph.addEdge(3, 4, 5);
         graph.addEdge(3, 7, 8);
-        KruskalMST mst = new KruskalMST();
+ KruskalAlgoforMSTskalMST mstKruskalAlgoforMSTskalMST();
         List<Edge<Integer>> result = mst.getMST(graph);
         for (Edge<Integer> edge : result) {
             System.out.println(edge.getVertex1() + " " + edge.getVertex2());

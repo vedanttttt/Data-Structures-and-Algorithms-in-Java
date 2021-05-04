@@ -43,7 +43,7 @@ class Gr{
 		
 		while(!minHeap.isEmpty()) {
 			int v=minHeap.poll().targetNode;
-			if(visited[v])
+			if(visited[v])  //maybe bcoz one node with two distances are stored in queue 
 				continue;
 			
 			visited[v]=true;
