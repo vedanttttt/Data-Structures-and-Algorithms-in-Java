@@ -1,6 +1,15 @@
 package graphs;
 import java.util.*;
 
+class Edge{
+	int targetNode;
+	int distanceFromNode;
+	
+	public Edge(int t,int d) {
+		targetNode=t;
+		distanceFromNode=d;
+	}
+}
 
 class Grap{
 	List<List<Edge>> adj;

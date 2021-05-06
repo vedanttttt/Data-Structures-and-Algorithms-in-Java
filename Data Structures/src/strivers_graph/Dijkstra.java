@@ -2,6 +2,7 @@ package strivers_graph;
 
 	import java.util.*; 
 
+	// to make this code run properly , coomment code of kruskal 
 	class Node implements Comparator<Node>
 	{
 	    private int v;

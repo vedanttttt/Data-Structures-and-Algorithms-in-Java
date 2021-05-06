@@ -2,6 +2,7 @@ package strivers_graph;
 
 import java.util.*; 
 
+//   // to make this code run properly , coomment code of dijkstra
 class Node 
 {
 	private int u;
@@ -39,11 +40,45 @@ public class KruskalsAlgo_MST {
 		return parent[u] = findParent(parent[u],parent);
 	}
 	
+	public static void union(int u,int v,int[] parent,int[] rank) {
+		u = findParent(u,parent);
+		v = findParent(v,parent);
+		
+		if(rank[u]<rank[v])
+			parent[u]=v;
+		else if(rank[v]<rank[u])
+			parent[v]=u;
+		else {
+			parent[v]=u;
+			rank[u]++;
+		}
+	}
+	
 	public void KruskalAlgo(List<Node> adj,int n) {
 		Collections.sort(adj, new SortComparator());
 		
 		int[] parent = new int[n];
 		int[] rank = new int[n];
+		
+		for(int i=0;i<n;i++) {
+			parent[i]=i;
+			rank[i]=0;
+		}
+		
+		int costMst=0;
+		List<Node> mst = new ArrayList<>();
+		for(Node it : adj) {
+			if(findParent(it.getU(),parent) != findParent(it.getV(),parent)) {
+				costMst += it.getWeight();
+				mst.add(it);
+				union(it.getU(),it.getV(),parent,rank);
+			}
+		}
+		
+		System.out.println(costMst);
+		for(Node it : mst) {
+			System.out.println(it.getU() + " " + it.getV());
+		}
 	}
 
 	public static void main(String[] args) {
