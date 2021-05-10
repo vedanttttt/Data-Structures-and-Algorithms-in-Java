@@ -14,7 +14,7 @@ public class MinCoinChange {
 		for(int i=0;i<coins.length;i++) {
 			for(int j=1;j<=sum;j++) {
 				
-				int excludingCurrentCoin=Integer.MAX_VALUE;
+				int excludingCurrentCoin=Integer.MAX_VALUE; //take it Integer.MAX_VALUE-1 , so that when we add 1 to it , it doesnt overflow
 				int includingCurrentCoin=Integer.MAX_VALUE;
 				
 				if(i>0)

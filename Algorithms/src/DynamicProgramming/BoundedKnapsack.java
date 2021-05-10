@@ -1,5 +1,8 @@
 package DynamicProgramming;
 
+import java.util.Arrays;
+import java.util.*;
+
 public class BoundedKnapsack {
 
 	public static int getMaxProfit(int[] wt,int[] pr,int capacity) {
@@ -25,9 +28,10 @@ public class BoundedKnapsack {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int[] wt= {0,1,2,3,5};
-		int[] pr= {0,1,4,7,10};
-		int capacity=8;
+		int[] wt= {1,2,1,2,1};
+		Arrays.sort(wt);
+		int[] pr= {100,100,100,100,100};
+		int capacity=10;
 		
 		System.out.println(BoundedKnapsack.getMaxProfit(wt,pr,capacity));
 	}
