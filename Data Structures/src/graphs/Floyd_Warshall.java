@@ -1,5 +1,7 @@
 package graphs;
 
+//It is also called all pair shortest path problem
+
 public class Floyd_Warshall {
 
 	final static int INF = 99999,V=4;

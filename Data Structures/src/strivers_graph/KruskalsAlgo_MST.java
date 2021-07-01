@@ -2,7 +2,7 @@
 //
 //import java.util.*; 
 //
-////   // to make this code run properly , coomment code of dijkstra
+////   // to make this code run properly , comment code of dijkstra
 //class Node 
 //{
 //	private int u;

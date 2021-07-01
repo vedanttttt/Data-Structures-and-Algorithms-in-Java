@@ -112,5 +112,6 @@ public class BSTApp {
 		root = a.delete(root,1);
 		a.inOrder(root);
 		System.out.println(a.isNodePresent(root, 11));
+		//System.out.println(root.data);
 	}
 }

@@ -10,6 +10,7 @@ public class MainClass {
 	ad.push(45);
 	ad.push(89);
 	System.out.println(ad.pop());
+	System.out.println(ad);
 	}
 }
  

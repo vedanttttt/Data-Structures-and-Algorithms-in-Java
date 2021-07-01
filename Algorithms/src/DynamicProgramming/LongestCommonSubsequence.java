@@ -45,8 +45,8 @@ public class LongestCommonSubsequence {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String s1="abde";
-		String s2="abd";
+		String s1="ecfbefdcfca";
+		String s2="badfcbebbf";
 		
 		System.out.println(LongestCommonSubsequence.lcs(s1, s2,s1.length(),s2.length()));
 		

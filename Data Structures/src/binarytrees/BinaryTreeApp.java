@@ -424,7 +424,7 @@ public class BinaryTreeApp {
     //a.topView(root);
     
     //Print bottom view
-    a.bottomView(root);
+    //a.bottomView(root);
     
     
 //    System.out.print("Inorder: ");

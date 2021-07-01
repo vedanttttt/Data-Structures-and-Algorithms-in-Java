@@ -64,6 +64,11 @@ public class LongestPathInDirectedAcyclicGraph {
         graph.addEdge( 3, 4); 
         graph.findLongestPath(n); 
         System.out.println( graph.findLongestPath( n)); 
+        
+        
+        // Another method is to use topological sort , first take topo sort , then keep popping the first element and for its all adjacent vertices , relax them , keep doing this.
+        // here relaxing means doing reverse of what we did earlier .
+        // solution in another file above it 
 	}
 
 }
